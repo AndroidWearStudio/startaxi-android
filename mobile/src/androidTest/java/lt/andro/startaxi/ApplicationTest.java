@@ -1,4 +1,4 @@
-package lt.ando.startaxi;
+package lt.andro.startaxi;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

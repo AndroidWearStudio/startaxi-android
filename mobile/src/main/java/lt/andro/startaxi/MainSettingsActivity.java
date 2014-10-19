@@ -1,4 +1,4 @@
-package lt.ando.startaxi;
+package lt.andro.startaxi;
 
 import android.annotation.TargetApi;
 import android.content.Context;

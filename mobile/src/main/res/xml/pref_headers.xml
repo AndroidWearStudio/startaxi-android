@@ -3,15 +3,15 @@
     <!-- These settings headers are only used on tablets. -->
 
     <header
-        android:fragment="lt.ando.startaxi.MainSettingsActivity$GeneralPreferenceFragment"
+        android:fragment="lt.andro.startaxi.MainSettingsActivity$GeneralPreferenceFragment"
         android:title="@string/pref_header_general"/>
 
     <header
-        android:fragment="lt.ando.startaxi.MainSettingsActivity$NotificationPreferenceFragment"
+        android:fragment="lt.andro.startaxi.MainSettingsActivity$NotificationPreferenceFragment"
         android:title="@string/pref_header_notifications"/>
 
     <header
-        android:fragment="lt.ando.startaxi.MainSettingsActivity$DataSyncPreferenceFragment"
+        android:fragment="lt.andro.startaxi.MainSettingsActivity$DataSyncPreferenceFragment"
         android:title="@string/pref_header_data_sync"/>
 
 </preference-headers>

@@ -1,4 +1,4 @@
-package lt.ando.startaxi;
+package lt.andro.startaxi;
 
 import android.app.Activity;
 import android.os.Bundle;

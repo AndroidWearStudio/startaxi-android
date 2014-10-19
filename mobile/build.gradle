@@ -5,7 +5,7 @@ android {
     buildToolsVersion "21.0.1"
 
     defaultConfig {
-        applicationId "lt.ando.startaxi"
+        applicationId "lt.andro.startaxi"
         minSdkVersion 14
         targetSdkVersion 21
         versionCode 1
