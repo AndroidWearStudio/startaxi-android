@@ -8,7 +8,7 @@ import lt.andro.both.api.entity.Estimate;
 import lt.andro.both.api.entity.Order;
 import lt.andro.both.api.entity.PossibleJourneys;
 import lt.andro.both.api.entity.Preferences;
-import lt.andro.both.api.entity.TaxiProvider;
+import lt.andro.both.api.entity.Provider;
 import lt.andro.both.api.entity.UserPosition;
 import retrofit.http.Body;
 import retrofit.http.GET;
@@ -27,7 +27,7 @@ public interface ApiServices {
      * <p/>
      * Returns information about available taxi providers in the area.
      */
-    @GET("/taxi/provider") Observable<List<TaxiProvider>> getProviders(@Body UserPosition body);
+    @GET("/taxi/provider") Observable<List<Provider>> getProviders(@Body UserPosition body);
 
     /**
      * Get available taxi providers and the estimates to the destinations

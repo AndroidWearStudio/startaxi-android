@@ -2,8 +2,9 @@ package lt.andro.both.api.entity;
 
 /**
  * @author Vilius Kraujutis
- * @since 2014-10-25 13:32
+ * @since 2014-10-25 13:53
  */
-public class UserPosition extends BaseEntity {
+public class Destination extends BaseEntity {
+    public int id;
     public Coordinates coordinates;
 }
