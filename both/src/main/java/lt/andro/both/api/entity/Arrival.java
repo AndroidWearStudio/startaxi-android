@@ -8,5 +8,6 @@ public class Arrival extends BaseEntity {
     public int orderId;
     public Coordinates taxiPosition;
     public int arrivalEta;
+    public boolean pickedUp;
     public boolean arrived;
 }
