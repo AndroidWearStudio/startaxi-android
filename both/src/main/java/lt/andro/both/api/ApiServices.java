@@ -27,31 +27,36 @@ public interface ApiServices {
      * <p/>
      * Returns information about available taxi providers in the area.
      */
-    @GET("/taxi/provider") Observable<List<Provider>> getProviders(@Body UserPosition body);
+    @GET("/taxi/provider")
+    Observable<List<Provider>> getProviders(@Body UserPosition body);
 
     /**
      * Get available taxi providers and the estimates to the destinations
      */
-    @GET("/taxi/estimate") Observable<List<Estimate>> getEstimations(@Body PossibleJourneys body);
+    @GET("/taxi/estimate")
+    Observable<List<Estimate>> getEstimations(@Body PossibleJourneys body);
 
     /**
      * Order a taxi
      * <p/>
      * Place a taxi order to the selected provider with user and destination coordinates.
      */
-    @POST("/taxi/order") Observable<Arrival> postOrder(@Body Order order);
+    @POST("/taxi/order")
+    Observable<Arrival> postOrder(@Body Order order);
 
     /**
      * Send preferences to the particular order
      * <p/>
      * Interact with the driver by sending preferences to the particular order.
      */
-    @PUT("/taxi/order") Observable<DriverMessage> putOrderPreferences(@Body Preferences preferences);
+    @PUT("/taxi/order")
+    Observable<DriverMessage> putOrderPreferences(@Body Preferences preferences);
 
     /**
      * Get order information
      * <p/>
      * Can be streamed using SSE.
      */
-    @GET("/taxi/order/{id}") Observable<Arrival> getOrder(@Path("id") int orderId);
+    @GET("/taxi/order/{id}")
+    Observable<Arrival> getOrder(@Path("id") int orderId);
 }
