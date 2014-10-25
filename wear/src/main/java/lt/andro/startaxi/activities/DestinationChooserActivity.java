@@ -1,15 +1,11 @@
-package lt.andro.startaxi;
+package lt.andro.startaxi.activities;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.support.wearable.view.WatchViewStub;
 import android.widget.TextView;
+import lt.andro.startaxi.R;
 
-/**
- * @author Vilius Kraujutis
- * @since 2014-10-19 23:54
- */
-public class TaxiActivity extends Activity {
+public class DestinationChooserActivity extends BaseActivity {
 
     private TextView mTextView;
 
@@ -17,7 +13,7 @@ public class TaxiActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        final WatchViewStub stub = (WatchViewStub) findViewById(R.id.watch_view_stub_taxi);
+        final WatchViewStub stub = (WatchViewStub) findViewById(R.id.watch_view_stub_main);
         stub.setOnLayoutInflatedListener(new WatchViewStub.OnLayoutInflatedListener() {
             @Override
             public void onLayoutInflated(WatchViewStub stub) {
