@@ -29,7 +29,7 @@ public class WaitingForTaxiActivity extends BaseActivity {
         ButterKnife.inject(this);
 
         List<View> cards = new ArrayList<View>(2);
-        cards.add(CardItemView.createCard(this, "Red taxi", "On it's way", R.drawable.ic_launcher));
+        cards.add(CardItemView.createCard(this, "On it's way", "Red Taxi", R.drawable.ic_launcher));
 
         pager.setAdapter(new CardAdapter(cards));
         cards.get(0).setOnClickListener(new View.OnClickListener() {
