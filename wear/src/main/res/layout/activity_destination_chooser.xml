@@ -2,18 +2,14 @@
 <android.support.wearable.view.BoxInsetLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/watch_view_stub_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     tools:deviceIds="wear">
 
-    <lt.andro.startaxi.views.CardItemView
+    <android.support.wearable.view.GridViewPager
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        app:title="Home"
-        app:src="@drawable/ic_full_sad"
-        app:description="5 min"/>
+        android:layout_height="match_parent"
+        android:id="@+id/activity_destination_chooser_pager"/>
 </android.support.wearable.view.BoxInsetLayout>

@@ -65,4 +65,14 @@ public class CardItemView extends LinearLayout {
     public void setOnButtonClickListener(OnClickListener l) {
         button.setOnClickListener(l);
     }
+
+    public static CardItemView createCard(Context context, CharSequence title, CharSequence description, int image) {
+        CardItemView cardItemView = new CardItemView(context);
+
+        cardItemView.setTitle(title);
+        cardItemView.setDescription(description);
+        cardItemView.setImage(image);
+
+        return cardItemView;
+    }
 }
