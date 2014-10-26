@@ -24,8 +24,8 @@ public class DestinationChooserActivity extends BaseActivity {
         ButterKnife.inject(this);
 
         List<View> cards = new ArrayList<View>(2);
-        cards.add(CardItemView.createCard(this, "Home", null, R.drawable.home));
-        cards.add(CardItemView.createCard(this, "Work", null, R.drawable.work));
+        cards.add(CardItemView.createCard(this, "Home", "~2 km", R.drawable.home));
+        cards.add(CardItemView.createCard(this, "Work", "~10 km", R.drawable.work));
 
         pager.setAdapter(new CardAdapter(cards));
     }
