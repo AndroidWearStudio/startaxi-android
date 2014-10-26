@@ -40,7 +40,7 @@ public class ProvidersActivity extends BaseActivity {
         cards.get(0).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(ProvidersActivity.this, ProvidersActivity.class));
+                startActivity(new Intent(ProvidersActivity.this, WaitingForTaxiActivity.class));
             }
         });
     }

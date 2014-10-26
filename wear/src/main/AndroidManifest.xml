@@ -22,11 +22,8 @@
         <activity android:name=".activities.ProvidersActivity"/>
 
         <activity
-            android:name=".activities.GetACarActivity"
+            android:name=".activities.WaitingForTaxiActivity"
             android:label="@string/app_name">
-            <intent-filter>
-                <action android:name="com.google.android.gms.actions.RESERVE_TAXI_RESERVATION"/>
-            </intent-filter>
         </activity>
     </application>
 
