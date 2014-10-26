@@ -85,4 +85,7 @@
     <color name="light_shadows_15">#26ffffff</color>
     <color name="light_shadows_10">#1affffff</color>
     <color name="light_shadows_5">#0dffffff</color>
+
+    <color name="default_button">#2878ff</color>
+    <color name="default_text">@color/light_shadows_80</color>
 </resources>

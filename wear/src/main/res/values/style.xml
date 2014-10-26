@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="WearTheme" parent="android:style/Theme.DeviceDefault">
+        <item name="android:textColor">@color/default_text</item>
+        <item name="circle_radius">@dimen/circle_button_radius</item>
+        <item name="circle_color">@color/default_button</item>
+    </style>
+</resources>

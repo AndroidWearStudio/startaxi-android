@@ -25,5 +25,7 @@ dependencies {
     compile 'com.google.android.support:wearable:1.0.0'
     compile 'com.google.android.gms:play-services-wearable:6.1.11'
 
+    compile 'com.jakewharton:butterknife:5.1.2'
+
     compile project(':both')
 }
