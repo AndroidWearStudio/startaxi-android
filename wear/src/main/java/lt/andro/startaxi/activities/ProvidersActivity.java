@@ -33,11 +33,11 @@ public class ProvidersActivity extends BaseActivity {
         ButterKnife.inject(this);
 
         List<View> cards = new ArrayList<View>(2);
-        cards.add(CardItemView.createCard(this, "Blue taxi", "Arrives in 15 min", R.drawable.ic_launcher));
-        cards.add(CardItemView.createCard(this, "Red taxi", "Arrives in 10 min", R.drawable.ic_launcher));
+        cards.add(CardItemView.createCard(this, "Blue taxi", "Arrives in 15 min", R.drawable.taxi));
+        cards.add(CardItemView.createCard(this, "Red taxi", "Arrives in 10 min", R.drawable.taxi));
 
         pager.setAdapter(new CardAdapter(cards));
-        cards.get(0).setOnClickListener(new View.OnClickListener() {
+        cards.get(1).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(ProvidersActivity.this, WaitingForTaxiActivity.class));
