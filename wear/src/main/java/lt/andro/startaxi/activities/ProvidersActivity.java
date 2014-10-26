@@ -1,10 +1,11 @@
 package lt.andro.startaxi.activities;
 
 import android.os.Bundle;
-import lt.andro.both.api.entity.Estimate;
-import lt.andro.both.api.entity.PossibleJourneys;
 
 import java.util.List;
+
+import lt.andro.both.api.entity.Estimate;
+import lt.andro.both.api.entity.PossibleJourneys;
 
 /**
  * @author Andrius Semionovas
@@ -31,6 +32,6 @@ public class ProvidersActivity extends BaseActivity {
     }
 
     private void loadedEstimates(List<Estimate> estimates) {
-        
+//
     }
 }
